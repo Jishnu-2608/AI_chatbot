@@ -170,6 +170,19 @@ header {
 }
 
 
+/* ==========================================================
+   FORCE NORMAL APP TEXT TO BE FULLY VISIBLE
+========================================================== */
+
+.stMarkdown,
+.stMarkdown p,
+.stMarkdown span {
+
+    opacity: 1 !important;
+
+}
+
+
 /* SIDEBAR */
 
 section[data-testid="stSidebar"] {
@@ -357,7 +370,9 @@ div[data-baseweb="select"] > div {
 }
 
 
-/* HEADER */
+/* ==========================================================
+   HEADER
+========================================================== */
 
 .chat-header {
 
@@ -473,7 +488,9 @@ div[data-baseweb="select"] > div {
 }
 
 
-/* WELCOME */
+/* ==========================================================
+   WELCOME
+========================================================== */
 
 .welcome-card {
 
@@ -566,7 +583,10 @@ div[data-baseweb="select"] > div {
 }
 
 
-/* CHAT */
+/* ==========================================================
+   CHAT MESSAGES
+   BRIGHT WHITE TEXT
+========================================================== */
 
 [data-testid="stChatMessage"] {
 
@@ -590,6 +610,114 @@ div[data-baseweb="select"] > div {
 }
 
 
+/* FORCE CHAT TEXT TO PURE WHITE */
+
+[data-testid="stChatMessage"] p,
+[data-testid="stChatMessage"] span,
+[data-testid="stChatMessage"] div,
+[data-testid="stChatMessage"] li,
+[data-testid="stChatMessage"] ul,
+[data-testid="stChatMessage"] ol {
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+}
+
+
+/* CHAT HEADINGS */
+
+[data-testid="stChatMessage"] h1,
+[data-testid="stChatMessage"] h2,
+[data-testid="stChatMessage"] h3,
+[data-testid="stChatMessage"] h4,
+[data-testid="stChatMessage"] h5,
+[data-testid="stChatMessage"] h6 {
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+}
+
+
+/* CHAT CODE */
+
+[data-testid="stChatMessage"] code {
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+}
+
+
+/* CHAT CODE BLOCK */
+
+[data-testid="stChatMessage"] pre {
+
+    background: #111827 !important;
+
+    color: #ffffff !important;
+
+    border-radius: 10px;
+
+    border:
+        1px solid rgba(129,140,248,0.25);
+
+}
+
+
+[data-testid="stChatMessage"] pre code {
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+}
+
+
+/* CHAT LINKS */
+
+[data-testid="stChatMessage"] a {
+
+    color: #a5b4fc !important;
+
+}
+
+
+/* CHAT TABLE */
+
+[data-testid="stChatMessage"] table {
+
+    color: #ffffff !important;
+
+}
+
+
+[data-testid="stChatMessage"] th,
+[data-testid="stChatMessage"] td {
+
+    color: #ffffff !important;
+
+}
+
+
+/* CHAT BLOCKQUOTE */
+
+[data-testid="stChatMessage"] blockquote {
+
+    color: #ffffff !important;
+
+    border-left:
+        3px solid #818cf8;
+
+}
+
+
+/* MESSAGE ANIMATION */
+
 @keyframes messageIn {
 
     from {
@@ -607,10 +735,13 @@ div[data-baseweb="select"] > div {
         transform: translateY(0);
 
     }
+
 }
 
 
-/* CHAT INPUT */
+/* ==========================================================
+   CHAT INPUT
+========================================================== */
 
 [data-testid="stChatInput"] {
 
@@ -653,7 +784,9 @@ div[data-baseweb="select"] > div {
 }
 
 
-/* FOOTER */
+/* ==========================================================
+   FOOTER
+========================================================== */
 
 .chat-footer {
 
